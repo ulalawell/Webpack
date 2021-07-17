@@ -1,0 +1,63 @@
+@import "~normalize.css";
+@import "./fonts.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
+
+.content {
+  marquee {
+    font-family: "Indie Flower", "sans-serif";
+    text-align: center;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  a:hover {
+    font-size: 28px;
+  }
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+
+  & div {
+    width: 300px;
+    height: 400px;
+    background-size: 100% 100%;
+  }
+
+  .jpg {
+    background-image: url("../assets/1.jpg");
+  }
+  .jpeg {
+    background-image: url("../assets/2.jpg");
+  }
+  .png {
+    background-image: url("../assets/3.jpg");
+  }
+}
+
+.define-plugin,
+.babel-loader {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 20px;
+}
